@@ -2,7 +2,7 @@
 GET http://localhost:3001/api/persons
 
 ### Test the all persons endpoint
-GET http://localhost:3001/api/persons/2
+GET http://localhost:3001/api/persons/6a4c473d44e66fc8b7dd9d86
 
 ### 
 POST http://localhost:3001/api/persons
@@ -14,7 +14,29 @@ Content-Type: application/json
 }
 
 ### Test deleting a person
-DELETE http://localhost:3001/api/persons/314751
+DELETE http://localhost:3001/api/persons/6a4d6e2884dabc75a122344d
 
 ### Test the all persons endpoint
 GET http://localhost:3001/api/perso
+
+
+
+
+
+### Test the all persons endpoint
+GET https://phonebook-jd2m.onrender.com/api/persons
+
+### Test the all persons endpoint
+GET https://phonebook-jd2m.onrender.com/api/persons/2
+
+### Test the all persons endpoint
+POST https://phonebook-jd2m.onrender.com/api/persons
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "number": "123-456-7890"
+}
+
+### Test deleting a person
+DELETE https://phonebook-jd2m.onrender.com/api/persons/64672
